@@ -1,0 +1,22 @@
+{% extends 'product/base.html'%}
+{% block title %}
+Prevent World Hunger
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <h1>{{title}}</h1>
+    <h6>Taken from <a target="_blank" href="https://www.worldvision.ca/stories/food/world-hunger-facts-how-to-help#4">
+        World Vision
+    </a></h6>
+    <br>
+    <img src="https://www.wfp.org/sites/default/files/styles/large/public/images/publication/HUNGER_MAP_2019_A3_EN-FINAL.jpg?itok=UeysZXn0" alt="">
+    <br>
+    <br>
+    {% for item in split %}
+        <p>{{item}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

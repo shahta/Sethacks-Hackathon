@@ -1,0 +1,20 @@
+{% extends 'product/base.html' %}
+{% block title %}
+Ways to Prevent Poverty
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="container">
+    <h1>{{title}}</h1>
+    <h5>Taken from <a href="https://www.globalcitizen.org/en/content/10-things-to-do-to-end-extreme-poverty-by-2030/">
+        Global Citizen
+    </a></h5>
+    <img src="https://s3.amazonaws.com/fjwp/blog/wp-content/uploads/2019/10/10175138/Goal-1-end-poverty-1-1024x512.png" alt="">
+    <br>
+    <br>
+    {% for item in paragraphs %}
+        <p>{{item}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

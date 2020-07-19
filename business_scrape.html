@@ -1,0 +1,54 @@
+{% extends 'product/base.html' %}
+{% block title %}
+Clean Business Innovation
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+    <br>
+    <h1>{{header}}</h1>
+    <p>{{intro}}</p>
+    <img src="https://www.ugp.co.uk/blog/wp-content/uploads/2019/11/Energy-Efficient-Businesses-1-1024x538.png" alt="">
+    <br>
+    <br>
+    <h4>{{recycle}}</h4>
+    {% for item in recycle_p %}
+        <p>{{item}}</p>
+    {% endfor %}
+
+    <h4>{{ink}}</h4>
+    <p>{{ink_p}}</p>
+
+    <h4>{{chemicals}}</h4>
+    <p>{{chemicals_p}}</p>
+
+    <h4>{{energy}}</h4>
+    <p>{{energy_p}}</p>
+
+    <h4>{{electronics}}</h4>
+    <p>{{electronics_p}}</p>
+
+    <h4>{{audit}}</h4>
+    <p>{{audit_p}}</p>
+
+    <h4>{{transportation}}</h4>
+    <p>{{transportation_p}}</p>
+
+    <h4>{{marketing}}</h4>
+    <p>{{marketing_p}}</p>
+    <ul>
+        {% for item in marketing_li %}
+            <li>{{item}}</li>
+        {% endfor %}
+    </ul>
+    <p>{{marketing_p2}}</p>
+
+    <h4>{{solar}}</h4>
+    {% for item in solar_p %}
+        <p>{{item}}</p>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
